@@ -66,10 +66,10 @@ h3 { font-size: 1.12rem; }
 .btn { display: inline-block; padding: 12px 22px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--text); text-decoration: none; font-weight: 600; transition: transform .15s, box-shadow .15s; }
 .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
 .btn.primary { background: var(--brand); color: #fff; border-color: transparent; }
-.trust { list-style: none; padding: 0; margin: 26px 0 0; display: flex; flex-wrap: wrap; gap: 26px; }
+.trust { list-style: none; padding: 0; margin: 26px 0 0; display: flex; flex-wrap: wrap; gap: 14px 18px; }
 .trust li { display: flex; flex-direction: column; }
-.trust strong { font-size: 1.02rem; }
-.trust span { color: var(--muted); font-size: .85rem; }
+.trust strong { font-size: .95rem; }
+.trust span { color: var(--muted); font-size: .8rem; }
 .hero-art { position: relative; display: grid; place-items: center; min-height: 340px; }
 .blob { position: absolute; width: 320px; height: 320px; border-radius: 42% 58% 60% 40% / 45% 40% 60% 55%; background: linear-gradient(135deg, var(--brand-soft), color-mix(in srgb, var(--brand-2) 30%, transparent)); animation: morph 12s ease-in-out infinite; }
 .avatar { position: relative; width: 300px; height: 300px; }
@@ -116,7 +116,7 @@ h3 { font-size: 1.12rem; }
 .omics-icon svg { fill: #fff; stroke: #fff; }
 .badge.hot { background: var(--brand-2); color: #fff; }
 .ticks.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
-.trust li.hl { background: var(--brand-soft); border: 1px solid var(--brand); padding: 4px 12px; border-radius: 12px; }
+.trust li.hl { background: var(--brand-soft); border: 1px solid var(--brand); padding: 4px 10px; border-radius: 12px; }
 @media (max-width: 760px) { .featured-body { flex-direction: column; } .ticks.cols { grid-template-columns: 1fr; } }
 
 /* illustrations */
