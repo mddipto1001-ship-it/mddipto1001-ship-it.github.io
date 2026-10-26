@@ -30,8 +30,8 @@ const I18N_SELECTOR = [
   ".contact-box > p", ".contact-box .btn", ".footer p",
 ].join(", ");
 const norm = html => html.replace(/\s+/g, " ").trim();
-// Skip hidden sections and the Japanese self-introduction (it stays Japanese in every language).
-const i18nEls = [...document.querySelectorAll(I18N_SELECTOR)].filter(el => !el.closest("[hidden], #japanese"));
+// Skip hidden sections.
+const i18nEls = [...document.querySelectorAll(I18N_SELECTOR)].filter(el => !el.closest("[hidden]"));
 const english = new Map(i18nEls.map(el => [el, norm(el.innerHTML)]));
 const englishTitle = document.title;
 const langButtons = document.querySelectorAll(".lang-switch button");
@@ -56,6 +56,11 @@ function updateDynamicText(t) {
   if (new Date() < START) {
     document.getElementById("current-role").textContent = t("@incomingRole") || "Incoming Research Scientist (from Dec 2026)";
     document.getElementById("omicore-dates").textContent = t("@incomingDates") || "From Dec 2026";
+    // Self-introduction: "currently at the Institute, joining OmiCore in December".
+    document.getElementById("intro-career").innerHTML = t("@introIncoming") ||
+      'I am currently a researcher at the <a href="https://www.reoken.com/" rel="noopener">Institute of Rheological Functions of Foods</a>, ' +
+      "and from December 2026 I will join OmiCore Inc. in Fukuoka as a Research Scientist. " +
+      "Before that, I worked in quality control at Incepta Pharmaceuticals in Bangladesh.";
   }
   document.getElementById("year").textContent = new Date().getFullYear();
 }
