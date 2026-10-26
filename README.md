@@ -6,7 +6,8 @@ A ready-made portfolio for **Shalman Dipto**. It is built with plain HTML, CSS a
 |---|---|
 | `index.html` | All page content (edit text here) |
 | `style.css` | Colours, layout, light/dark theme, phone layout |
-| `script.js` | Dark-mode toggle, mobile menu, scroll fade-in, automatic "Incoming" label before 1 Dec 2026 |
+| `script.js` | Language buttons (EN / বাং / 日本), dark-mode toggle, mobile menu, scroll fade-in, automatic "Incoming" label before 1 Dec 2026 |
+| `i18n.js` | Bangla and Japanese text. Each entry is keyed by the English text in `index.html`; if you change English text, update its key here or that line stays English |
 | `assets/avatar.svg` | Cartoon portrait (replace with a real photo later if you like) |
 | `assets/illus-*.svg`, `assets/step-*.svg` | Cartoon/schematic illustrations (HPLC, gel/blot/cells, AI, spatial omics, pipeline steps) |
 

@@ -24,15 +24,20 @@
 </head>
 <body>
   <header class="nav">
-    <a class="brand" href="#top"><img src="assets/avatar.svg" alt="" width="32" height="32"> Shalman Dipto</a>
+    <a class="brand" href="#top" aria-label="Shalman Dipto"><img src="assets/avatar.svg" alt="" width="32" height="32"> <span class="brand-name">Shalman Dipto</span></a>
     <nav id="menu">
       <a href="#pipeline">Overview</a>
       <a href="#research">Expertise</a>
       <a href="#work">Work</a>
       <a href="#experience">Experience</a>
-      <a href="#japanese">日本語</a>
+      <a href="#japanese">Japanese intro</a>
       <a class="nav-cta" href="#contact">Contact</a>
     </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="en" lang="en" title="English" aria-pressed="true">EN</button>
+      <button type="button" data-lang="bn" lang="bn" title="বাংলা" aria-pressed="false">বাং</button>
+      <button type="button" data-lang="ja" lang="ja" title="日本語" aria-pressed="false">日本</button>
+    </div>
     <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">◐</button>
     <button id="menu-toggle" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
   </header>
@@ -347,6 +352,7 @@
     <p>© <span id="year">2026</span> Shalman Dipto · Fukuoka, Japan · Built with plain HTML, CSS &amp; JS</p>
   </footer>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
